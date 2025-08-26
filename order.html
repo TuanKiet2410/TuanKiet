@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt vé</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <div class="br">
+      <div class="banner"></div>
+      <div class="sub-menu">
+        <ul id="nav">
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li>
+            <a href="phimChieuRap.html" target="_blank">Phim Chiếu Rạp</a>
+          </li>
+          <li><a href="PhimBo.html" target="_blank">Phim Bộ</a></li>
+
+          <li>
+            <a href="">Đặt vé</a>
+            <ul>
+              <li><a href="order.html" name="CGV">CGV</a></li>
+              <li><a href="order.html" name="Galaxy">Galaxy</a></li>
+              <li><a href="order.html" name="Beta">Beta</a></li>
+            </ul>
+          </li>
+          <li><a href="khac.html">Đăng nhập</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="chonFilm">
+          <p>Chọn phim</p>
+          <input type="text" id="movieInput" placeholder="Chọn một phim..." />
+          <div class="carousel">
+            <div>
+              <img
+                src="image/phim_chieu_rap_viet_nam_hai_huoc_13_f0ecada03f.jpg"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Làm giàu với ma`)"
+              />
+            </div>
+            <div>
+              <img
+                src="image/HaiMuoi.jpg"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Hai Muối`)"
+              />
+            </div>
+            <div>
+              <img
+                src="image/CongTuBacLieu.png"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Công tử Bạc Liêu`)"
+              />
+            </div>
+            <div>
+              <img
+                src="image/Áp_phích_chính_thức_Ma_Da.jpg"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Ma Da`)"
+              />
+            </div>
+            <div>
+              <img
+                src="image/QuyCau.webp"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Quỷ Cẩu`)"
+              />
+            </div>
+            <div>
+              <img
+                src="image/470x700-kungfupanda4.jpg"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Kungfu Panda`)"
+              />
+            </div>
+            <div>
+              <img
+                src="image/PhiVuNghinCan.jpg"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Phi vụ nghìn cân`)"
+              />
+            </div>
+            <div>
+              <img
+                src="image/Doctor-Strange-madness-1-poster_KP.webp"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Doctor Strange`)"
+              />
+            </div>
+
+            <div>
+              <img
+                src="image/404-chay-ngay-di-16423-thumb.webp"
+                alt=""
+                width="210px"
+                height="300px"
+                onclick="fillInput(`Chạy ngay đi`)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="chonGhe">
+          <p>Chọn vị trí</p>
+          <span class="manHinh"></span>
+          <div class="hangNgang">
+            <p>A</p>
+
+            <span class="seat">1</span>
+            <span class="seat">2</span>
+            <span class="seat occupied">3</span>
+            <span class="seat">4</span>
+            <span class="seat">5</span>
+            <span class="seat occupied">6</span>
+            <span class="seat">7</span>
+            <span class="seat">8</span>
+            <span class="seat">9</span>
+            <span class="seat">10</span>
+          </div>
+          <div class="hangNgang">
+            <p>B</p>
+            <span class="seat">1</span>
+            <span class="seat">2</span>
+            <span class="seat occupied">3</span>
+            <span class="seat">4</span>
+            <span class="seat occupied">5</span>
+            <span class="seat">6</span>
+            <span class="seat">7</span>
+            <span class="seat">8</span>
+            <span class="seat">9</span>
+            <span class="seat">10</span>
+          </div>
+          <div class="hangNgang">
+            <p>C</p>
+            <span class="seat">1</span>
+            <span class="seat">2</span>
+            <span class="seat occupied">3</span>
+            <span class="seat occupied">4</span>
+            <span class="seat">5</span>
+            <span class="seat">6</span>
+            <span class="seat">7</span>
+            <span class="seat">8</span>
+            <span class="seat">9</span>
+            <span class="seat">10</span>
+          </div>
+          <div class="hangNgang">
+            <p>D</p>
+            <span class="seat">1</span>
+            <span class="seat">2</span>
+            <span class="seat occupied">3</span>
+            <span class="seat">4</span>
+            <span class="seat occupied">5</span>
+            <span class="seat">6</span>
+            <span class="seat">7</span>
+            <span class="seat">8</span>
+            <span class="seat">9</span>
+            <span class="seat">10</span>
+          </div>
+          <div class="hangNgang">
+            <p>E</p>
+            <span class="seat">1</span>
+            <span class="seat">2</span>
+            <span class="seat occupied">3</span>
+            <span class="seat">4</span>
+            <span class="seat">5</span>
+            <span class="seat occupied">6</span>
+            <span class="seat">7</span>
+            <span class="seat">8</span>
+            <span class="seat">9</span>
+            <span class="seat">10</span>
+          </div>
+        </div>
+        <div class="chonGio">
+          <span class="time"
+            ><p class="gioBatdau">8h-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">9h30-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">11h-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">12h30-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">14h-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">15h30-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">17h-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">18h30-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">20h-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">21h30-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+          <span class="time"
+            ><p class="gioBatdau">23h-</p>
+            <p class="gioKetthuc"></p
+          ></span>
+        </div>
+        <div class="orderFood">
+          <div class="menu">
+            <div class="imgFood">
+              <img src="image/food/Screenshot 2025-06-12 141826.png" alt="" />
+            </div>
+            <div class="content">
+              <p>Bắp</p>
+              <p class="pay">50k</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="imgFood">
+              <img src="image/food/Screenshot 2025-06-12 141838.png" alt="" />
+            </div>
+            <div class="content">
+              <p>Pesi</p>
+              <p class="pay">50k</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="imgFood">
+              <img src="image/food/CGV.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <p>Quà tặng</p>
+              <p class="pay">0k</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="imgFood">
+              <img src="image/food/Beta.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <p>Combo</p>
+              <p class="pay">100k</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="imgFood">
+              <img src="image/food/galaxy.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>Pesi</p>
+              <p class="pay">199k</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="imgFood">
+              <img src="image/food/combo1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>Combo</p>
+              <p class="pay">148k</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="imgFood">
+              <img src="image/food/beta.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>Combo</p>
+              <p class="pay">59k</p>
+            </div>
+          </div>
+        </div>
+        <div class="xacNhan">
+          <button class="hoanThanh">
+            Thanh Toán:
+            <div class="soTien">156k</div>
+          </button>
+        </div>
+      </div>
+      <div class="Footer">
+        <p>TKW1: 501240068 Nguyễn Tuấn Kiệt</p>
+      </div>
+    </div>
+    <script src="order.js"></script>
+  </body>
+</html>
